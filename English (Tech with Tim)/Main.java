@@ -1,8 +1,11 @@
+import java.util.Scanner;
+
 public class Main {
     public static void main(String... args) {
         System.out.println("Hello");
         // dataTypes();
         // operation();
+        userInputs();
     }
 
     public static void dataTypes() {
@@ -51,5 +54,19 @@ public class Main {
         System.out.println(multiply);
         System.out.println(division);
         System.out.println(modulus);
+    }
+
+    public static void userInputs() {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter String: ");
+        String stringValue = sc.nextLine();
+        System.out.println("Your String is : "+ stringValue);
+
+        System.out.println("Enter String: ");
+        int intNumber = Integer.parseInt(sc.nextLine());
+        System.out.println("Your Number is : "+ intNumber);
+
+
+
     }
 }
