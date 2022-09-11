@@ -1,4 +1,7 @@
+import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.Scanner;
+import java.util.Set;
 
 public class Main {
     public static void main(String... args) {
@@ -7,7 +10,8 @@ public class Main {
         // operation();
         // userInputs();
         // conditional();
-        arrays();
+        // arrays();
+        setsAndList();
     }
 
     public static void dataTypes() {
@@ -132,6 +136,36 @@ public class Main {
             System.out.println(count);
             count -= 1;
         } while (count != 0);
+
+    }
+
+    public static void setsAndList() {
+        Set<Integer> integerSet = new HashSet<Integer>();
+        for (int i = 0; i < 5; i++) {
+            integerSet.add(i);
+        }
+        integerSet.add(1);
+        System.out.println(integerSet);
+        System.out.println(integerSet.size());
+        integerSet.remove(0);
+        System.out.println(integerSet);
+        System.out.println(integerSet.contains(1));
+        integerSet.clear();
+        System.out.println(integerSet);
+
+        ArrayList<Integer> arrayList = new ArrayList<Integer>();
+        for (int i = 0; i < 5; i++) {
+            arrayList.add(i);
+        }
+        arrayList.add(1);
+        System.out.println(arrayList.get(0));
+        arrayList.set(0, 10);
+
+        System.out.println(arrayList);
+        System.out.println(arrayList.size());
+        System.out.println(arrayList.subList(0, 2));
+        arrayList.clear();
+        System.out.println(arrayList);
 
     }
 }
