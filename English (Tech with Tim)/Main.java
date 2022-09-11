@@ -6,7 +6,8 @@ public class Main {
         // dataTypes();
         // operation();
         // userInputs();
-        conditional();
+        // conditional();
+        arrays();
     }
 
     public static void dataTypes() {
@@ -94,6 +95,32 @@ public class Main {
             System.out.println("Right");
         } else {
             System.out.println("Nope");
+        }
+
+    }
+
+    public static void arrays() {
+        int[] numberArr = new int[5];
+        String[] stringArray = new String[5];
+        double[] doubleArray = { 1.3, 1.4, 1.5, 1.3, 1.4 };
+
+        for (int i = 0; i < numberArr.length; i++) {
+            numberArr[i] = i + 1;
+            stringArray[i] = "str" + (i + 1);
+        }
+
+        for (int i = 0; i < numberArr.length; i++) {
+            if(i == 3) {
+                continue;
+            } else if(i == 5) {
+                break;
+            }
+            System.out.println(numberArr[i]);
+            System.out.println(stringArray[i]);
+        }
+
+        for (double d : doubleArray) {
+            System.out.println(d);
         }
 
     }
