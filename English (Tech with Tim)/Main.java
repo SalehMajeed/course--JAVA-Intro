@@ -110,18 +110,28 @@ public class Main {
         }
 
         for (int i = 0; i < numberArr.length; i++) {
-            if(i == 3) {
+            if (i == 3) {
                 continue;
-            } else if(i == 5) {
+            } else if (i == 5) {
                 break;
             }
             System.out.println(numberArr[i]);
-            System.out.println(stringArray[i]);
         }
 
         for (double d : doubleArray) {
             System.out.println(d);
         }
+
+        int count = 0;
+        while (count != stringArray.length) {
+            System.out.println(stringArray[count]);
+            count += 1;
+        }
+
+        do {
+            System.out.println(count);
+            count -= 1;
+        } while (count != 0);
 
     }
 }
