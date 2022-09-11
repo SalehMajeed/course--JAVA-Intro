@@ -5,7 +5,8 @@ public class Main {
         System.out.println("Hello");
         // dataTypes();
         // operation();
-        userInputs();
+        // userInputs();
+        conditional();
     }
 
     public static void dataTypes() {
@@ -60,13 +61,40 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter String: ");
         String stringValue = sc.nextLine();
-        System.out.println("Your String is : "+ stringValue);
+        System.out.println("Your String is : " + stringValue);
 
         System.out.println("Enter String: ");
         int intNumber = Integer.parseInt(sc.nextLine());
-        System.out.println("Your Number is : "+ intNumber);
+        System.out.println("Your Number is : " + intNumber);
 
+    }
 
+    public static void conditional() {
+        int x = 2;
+        int y = 32;
+        int z = 34;
+
+        String str1 = "H";
+        String str2 = "h";
+
+        boolean compare = (x + y) == z;
+        if (compare == true) {
+            System.out.println("Bingo right: " + x + " + " + y + " is Always = " + z);
+        } else {
+            System.out.println("Not  : " + x + " + " + y + " is Always Not Iqual " + z);
+        }
+
+        if (str1 == str2) {
+            System.out.println("Right");
+        } else {
+            System.out.println("Nope");
+        }
+
+        if (true && false || (!false || true)) {
+            System.out.println("Right");
+        } else {
+            System.out.println("Nope");
+        }
 
     }
 }
